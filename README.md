@@ -1,2 +1,3 @@
 # rush
-A simple UNIX shell written in C
+A simple UNIX shell written in C  
+**This is a work in progress**
