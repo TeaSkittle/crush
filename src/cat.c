@@ -1,0 +1,25 @@
+// cat out contents of argv[1]
+// Author: Travis Dowd
+// Date: 3-18-2020
+//
+// Example:
+//  $ cat file
+//
+
+#include <stdio.h>
+
+int main( int argc, char *argv[] ) {
+  if ( argc == 2 ) {
+    static int c;
+    FILE *f = fopen( argv[1], "r" );
+    if ( f ) {
+      while (( c = getc( f )) != EOF )
+	putchar ( c );
+      fclose ( f );
+    } else {
+      printf( "Can't open file.\n" );
+    } return 0;
+  } else {
+    printf( "Not enough arguments.\n" );
+  } return 0;
+}
