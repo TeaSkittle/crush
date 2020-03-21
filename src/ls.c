@@ -1,10 +1,6 @@
 // list files in directory
 // Author: Travis Dowd
 // Date: 3-18-2020
-//
-// Example:
-//  $ ls
-//
 
 #include <stdio.h>
 #include <dirent.h>

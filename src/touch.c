@@ -1,10 +1,6 @@
 // create an empty file named argv[1]
 // Author: Travis Dowd
 // Date: 3-18-2020
-//
-// Example:
-//  $ touch test.txt
-//
 
 #include <stdio.h>
 
@@ -18,5 +14,5 @@ int main( int argc, char *argv[] ) {
     fclose ( f );
   } else {
     printf( "Not enough arguments.\n" );
-  }
+  } return 0;
 }

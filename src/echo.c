@@ -1,10 +1,6 @@
-// print arguments to stdout
+// print argv[n] to stdout
 // Author: Travis Dowd
-// Date; 3-18-2020
-//
-// Example:
-//  $ echo hello world
-//
+// Date: 3-18-2020
 
 #include <stdio.h>
 

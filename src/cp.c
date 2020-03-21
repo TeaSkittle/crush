@@ -1,10 +1,6 @@
 // copy argv[1] to argv[2]
 // Author: Travis Dowd
 // Date: 3-18-2020
-//
-// Example:
-//  $ cp file1 file2
-//
 
 #include <stdio.h>
 

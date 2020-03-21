@@ -1,10 +1,6 @@
 // cat out contents of argv[1]
 // Author: Travis Dowd
 // Date: 3-18-2020
-//
-// Example:
-//  $ cat file
-//
 
 #include <stdio.h>
 

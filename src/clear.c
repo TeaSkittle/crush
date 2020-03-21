@@ -1,10 +1,6 @@
 // clear screen
 // Author: Travis Dowd
 // Date: 3-18-2020
-//
-// Example:
-//  $ clear
-//
 
 #include <stdio.h>
 

@@ -1,10 +1,6 @@
 // print working directory
 // Author: Travis Dowd
 // Date; 3-18-2020
-//
-// Example:
-//  $ pwd
-//
 
 #include<stdio.h>
 #include<unistd.h>
