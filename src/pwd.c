@@ -1,6 +1,6 @@
 // print working directory
 // Author: Travis Dowd
-// Date; 3-18-2020
+// Date: 3-18-2020
 
 #include<stdio.h>
 #include<unistd.h>
