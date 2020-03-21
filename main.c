@@ -20,8 +20,8 @@ char *read_line( void );
 char *split_line( char *line );
 int launch( char **args );
 
-int running = 1;
 int main( void ) {
+  int running = 1;
   int status;
   char *line;
   char **args;
@@ -30,9 +30,7 @@ int main( void ) {
     line = read_line();
     args = split_line( line );
     status = launch( args );
-    if ( strcmp( args[0], "exit" ) == 0 ) {
-      running = 0;
-    }
+    if ( strcmp( args[0], "exit" ) == 0 ) { running = 0; }
     free( line );
     free( args );
   } return 0;
@@ -49,10 +47,6 @@ char *split_line( char *line ) {
   int bufsize = TOK_BUFSIZE, pos = 0;
   char **tokens = malloc( bufsize * sizeof( char* ));
   char *token;
-  if ( !tokens ) {
-    fprintf( stderr, "allocation error\n" );
-    exit( EXIT_FAILURE );
-  }
   token = strtok( line, TOK_DELIM );
   while ( token != NULL ) {
     tokens[pos] = token;
@@ -60,14 +54,8 @@ char *split_line( char *line ) {
     if ( pos >= bufsize ) {
       bufsize += TOK_BUFSIZE;
       tokens = realloc( tokens, bufsize * sizeof( char* ));
-      if ( !tokens ) {
-	fprintf( stderr, "allocation error\n" );
-	exit( EXIT_FAILURE );
-      }
-    }
-    token = strtok( NULL, TOK_DELIM );
-  }
-  tokens[pos] = NULL;
+    } token = strtok( NULL, TOK_DELIM );
+  } tokens[pos] = NULL;
   return tokens;
 }
 
@@ -76,17 +64,10 @@ int launch( char **args ) {
   int status;
   pid = fork();
   if ( pid == 0 ) {
-    if ( execvp( args[0], args ) == -1 ) {
-      perror( "crush" );
-    }
-    exit( EXIT_FAILURE );
-  } else if ( pid < 0 ) {
-    perror( "crush" );
-  } else {
-    do {
-      wpid = waitpid( pid, &status, WUNTRACED );
-    } while ( !WIFEXITED( status ) && !WIFSIGNALED( status ));
-  }
-  return 1;
+    if ( execvp( args[0], args ) == -1 ) {}
+  } else {     
+    while ( !WIFEXITED( status ) && !WIFSIGNALED( status )); {
+      wpid = waitpid( pid, &status, WUNTRACED ); }
+  } return 1;
 }
 
