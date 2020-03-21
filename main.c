@@ -1,9 +1,6 @@
 // Crush ( C RUdimentary SHell )
 // Author: Travis Dowd
 // Date: 3-19-2020
-//
-// Thanks to brennan.io for thier great shell tutorial
-//
 
 #include <stdio.h>
 #include <stdlib.h>
