@@ -13,6 +13,6 @@ int main( int argc, char *argv[] ) {
     }
     fclose ( f );
   } else {
-    printf( "Not enough arguments.\n" );
+    perror( "touch" );
   } return 0;
 }

@@ -13,9 +13,9 @@ int main( int argc, char *argv[] ) {
 	putchar ( c );
       fclose ( f );
     } else {
-      printf( "Can't open file.\n" );
+      perror( "cat" );
     } return 0;
   } else {
-    printf( "Not enough arguments.\n" );
+    perror( "cat" );
   } return 0;
 }

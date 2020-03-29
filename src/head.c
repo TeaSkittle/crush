@@ -16,7 +16,7 @@ int main( int argc, char *argv[] ) {
       } printf( "\n" );
       fclose( f ); 
     } else {
-      printf( "Can't open file\n" );
+      perror( "head" );
     } 
   } return 0;
 }

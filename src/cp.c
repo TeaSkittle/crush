@@ -16,6 +16,6 @@ int main( int argc, char *argv[] ) {
       fclose(file2);
      } return 0;
   } else {
-    printf( "Not enough arguments.\n" );
+    perror( "cp" );
   } return 0;
 }

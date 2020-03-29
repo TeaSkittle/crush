@@ -17,6 +17,6 @@ int main( int argc, char *argv[] ) {
     char s[100];
     chdir( argv[1] );
   } else {
-    printf( "Not enough arguments.\n" );
+    perror( "cd" );
   } return 0;
 }

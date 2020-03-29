@@ -20,7 +20,7 @@ int main( int argc, char *argv[] ) {
 	if ( rev_lines > ( lines - 11 )) { putchar( c ); }
       } fclose( f ); 
     } else {
-      printf( "Can't open file\n" );
+      perror( "tail" );
     }
   } return 0;
 }

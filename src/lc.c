@@ -14,7 +14,7 @@ int main( int argc, char *argv[] ) {
 	if ( c == '\n' ) { lines++; }
       } fclose( f ); 
     } else {
-      printf( "Can't open file\n" );
+      perror( "lc" );
     } printf("%d\n" ,lines);
   } return lines;
 }
