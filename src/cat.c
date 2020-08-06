@@ -9,9 +9,9 @@ int main( int argc, char *argv[] ) {
     static int c;
     FILE *f = fopen( argv[1], "r" );
     if ( f ) {
-      while (( c = getc( f )) != EOF )
+      while (( c = getc( f )) != EOF ){
 	putchar ( c );
-      fclose ( f );
+      } fclose ( f );
     } else {
       perror( "cat" );
     } return 0;
