@@ -8,7 +8,7 @@ int main( int argc, char *argv[] ) {
   int lines = 0;
   int rev_lines = 0;
   if ( argc == 2 ) {
-    static int c;
+    static int c; // Should c = 0 here?
     FILE *f = fopen( argv[1], "r" );
     if ( f ) {
       while (( c = getc( f )) != EOF ) {      
