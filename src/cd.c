@@ -14,7 +14,8 @@
 
 int main( int argc, char *argv[] ) {
   if ( argc == 2 ) {
-    char s[100];
+    // Why did I add this?!?!?
+    //char s[100];
     chdir( argv[1] );
   } else {
     perror( "cd" );
