@@ -10,8 +10,8 @@ int main( int argc, char *argv[] ) {
     FILE *f = fopen( argv[1], "r" );
     if ( f ) {
       while (( c = getc( f )) != EOF ){
-	putchar ( c );
-      } fclose ( f );
+	putchar( c );
+      } fclose( f );
     } else {
       perror( "cat" );
     } return 0;
