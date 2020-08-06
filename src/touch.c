@@ -5,14 +5,16 @@
 #include <stdio.h>
 
 int main( int argc, char *argv[] ) {
-  int ch = '\0';
+  // Why the ascci here?
+  // https://stackoverflow.com/questions/11294850/the-ascii-value-of-0-is-same-as-ascii-value-of-0
+  //int ch = '\0';
+  int ch = 0;
   if ( argc > 0 ) {
     FILE *f = fopen ( argv[1], "w" );
     if ( f ) {
       fputc( ch, f );
-    }
-    fclose ( f );
+    } fclose ( f );
   } else {
     perror( "touch" );
-  } return 0;
+  } return 0; // returning 139?
 }
