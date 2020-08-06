@@ -16,6 +16,6 @@ int main( int argc, char *argv[] ) {
     } else {
       perror( "lc" );
     } printf("%d\n" ,lines);
-  } return lines;
+  } return 0;
 }
     
