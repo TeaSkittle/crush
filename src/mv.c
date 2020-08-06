@@ -11,8 +11,8 @@ int main( int argc, char *argv[] ) {
       FILE *file2 = fopen( argv[2], "w" );
       if ( file1 ) {
       	while ((c = fgetc( file1 )) != EOF ) {
-	  fputc( c, file2 ); }
-	fclose( file1 );
+	  fputc( c, file2 );
+	} fclose( file1 );
      	fclose( file2 );
       	remove( argv[1] ); }
   } else {
