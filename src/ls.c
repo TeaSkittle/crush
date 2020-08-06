@@ -6,7 +6,6 @@
 #include <dirent.h>
 
 int main( int argc, char *argv[] ) {
-  int i;
   struct dirent *d;
   DIR *dr = opendir( argv[1] );
   if ( dr == NULL ) {
@@ -18,5 +17,5 @@ int main( int argc, char *argv[] ) {
     printf( "%s  ", d->d_name );
   } printf( "\n" );
     closedir( dr );
-  } return 0;
+  } return 0; // returning 139?
 }
