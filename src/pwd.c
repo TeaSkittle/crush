@@ -2,8 +2,8 @@
 // Author: Travis Dowd
 // Date: 3-18-2020
 
-#include<stdio.h>
-#include<unistd.h>
+#include <stdio.h>
+#include <unistd.h>
 
 int main( void ) {
   char a[256];
