@@ -11,9 +11,9 @@ int main( int argc, char *argv[] ) {
      FILE *file2 = fopen( argv[2], "w" );
      if ( file1 ) {
        while (( ch = fgetc( file1 )) != EOF ) {
-	  	fputc( ch, file2 );
-	  } fclose( file1 );
-      fclose( file2 );
+	  fputc( ch, file2 );
+	} fclose( file1 );
+      	fclose( file2 );
      } return 0;
   } else {
     perror( "cp" );
