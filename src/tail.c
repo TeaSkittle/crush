@@ -2,7 +2,7 @@
 // Author: Travis Dowd
 // Date: 3-23-2020
 
-#include  <stdio.h>
+#include <stdio.h>
 
 int main( int argc, char *argv[] ) {
   int lines = 0;
@@ -20,7 +20,6 @@ int main( int argc, char *argv[] ) {
 	if ( rev_lines > ( lines - 11 )) { putchar( c ); }
       } fclose( f ); 
     } else {
-      perror( "tail" );
-    }
+      perror( "tail" ); }
   } return 0;
 }
