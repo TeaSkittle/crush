@@ -13,6 +13,5 @@ int main( int argc, char *argv[] ) {
     link( argv[1], argv[2] );
   } else {
     perror( "ln" );
-  }
-  return 0;
+  } return 0;
 }
