@@ -6,7 +6,7 @@
 // This only changes directory for this proccess, so when ran
 // by itself it doesn't change the directory of the current shell.
 // But ran inside of this shell, it will change, but when shell
-// is exited, you be be back where you started when shell was ran.
+// is exited, you will be back yo where you started when shell was ran.
 //
 
 #include <stdio.h>
