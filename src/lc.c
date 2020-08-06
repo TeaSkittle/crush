@@ -1,4 +1,4 @@
-// find number of lines of file
+// count number of lines in file
 // Author: Travis Dowd
 // Date: 3-22-2020
 
@@ -15,7 +15,7 @@ int main( int argc, char *argv[] ) {
       } fclose( f ); 
     } else {
       perror( "lc" );
-    } printf("%d\n" ,lines);
+    } printf( "%d\n", lines );
   } return 0;
 }
     
